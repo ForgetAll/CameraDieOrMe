@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/top"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top"
+        android:visibility="gone">
+
+    </android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="开启MainActivity" />
+
+    <Button
+        android:id="@+id/bt_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="关闭MainActivity" />
+
+    <Button
+        android:id="@+id/bt_start_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启相机Activity" />
+
+</RelativeLayout>
